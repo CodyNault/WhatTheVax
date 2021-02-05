@@ -1,11 +1,11 @@
 # What The Vax
 
-### Why we exist
+### Why This Exists
 This shouldnt even be a thing but here we are. For some reason it seemed like a good idea to leave every county to figure out distribution on their own.
 Now there are thousands of different portals for registering for the vaccine, each with their own problems. At least now we can post the links, tips, comments specific to your county/location in the US and have it all in one place.
 
-### Why our website is on GitHub
-This way anyone with moderate technical skill can contribute what tips they have found for registering for vaccines in their county. Instructions for contibuting are at the bottom of this page.
+### This Information is from Unofficial Community Submissions 
+Keep in mind, this is a collection of links and tips submitted from memebers of the community not any official organization. We do not guarantee that any of this information is accurate. If you identify any innacurate information please submit the correct information to the projet. Instructions for contibuting are at the bottom of this page.
 
 
 ### States
@@ -75,6 +75,7 @@ and anyone else who want to help me!
 
 ### How to Contribute
 
+We are hosting this site on github. This way anyone with moderate technical skill can contribute what tips they have found for registering for covid vaccines in their county.
 Using a github account submit a pull request https://guides.github.com/activities/forking/
 to the project https://github.com/CodyNault/WhatTheVax
 If you dont know what any of this means, ask a programmer or techy friend and they should be able to help.

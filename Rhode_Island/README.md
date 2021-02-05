@@ -1,2 +1,7 @@
 # Rhode_Island
-Be sure to check your specific county above to see if you have additional tips for your location
+Be sure to check your specific county above to see if you have additional tips for your location\
+[Bristol](Bristol.md)\
+[Kent](Kent.md)\
+[Newport](Newport.md)\
+[Providence](Providence.md)\
+[Washington](Washington.md)

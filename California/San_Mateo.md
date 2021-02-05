@@ -1,1 +1,3 @@
-No tips submitted for this location yet.
+# San Mateo - California
+
+[https://www.smchealth.org/covidvaccine](https://www.smchealth.org/covidvaccine)

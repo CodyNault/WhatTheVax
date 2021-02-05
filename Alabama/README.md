@@ -4,70 +4,70 @@
 Be sure to check your specific county above to see if you have additional tips for your location
 
 ### Counties
-[Autauga](Autauga.md)\
-[Baldwin](Baldwin.md)\
-[Barbour](Barbour.md)\
-[Bibb](Bibb.md)\
-[Blount](Blount.md)\
-[Bullock](Bullock.md)\
-[Butler](Butler.md)\
-[Calhoun](Calhoun.md)\
-[Chambers](Chambers.md)\
-[Cherokee](Cherokee.md)\
-[Chilton](Chilton.md)\
-[Choctaw](Choctaw.md)\
-[Clarke](Clarke.md)\
-[Clay](Clay.md)\
-[Cleburne](Cleburne.md)\
-[Coffee](Coffee.md)\
-[Colbert](Colbert.md)\
-[Conecuh](Conecuh.md)\
-[Coosa](Coosa.md)\
-[Covington](Covington.md)\
-[Crenshaw](Crenshaw.md)\
-[Cullman](Cullman.md)\
-[Dale](Dale.md)\
-[Dallas](Dallas.md)\
-[DeKalb](DeKalb.md)\
-[Elmore](Elmore.md)\
-[Escambia](Escambia.md)\
-[Etowah](Etowah.md)\
-[Fayette](Fayette.md)\
-[Franklin](Franklin.md)\
-[Geneva](Geneva.md)\
-[Greene](Greene.md)\
-[Hale](Hale.md)\
-[Henry](Henry.md)\
-[Houston](Houston.md)\
-[Jackson](Jackson.md)\
-[Jefferson](Jefferson.md)\
-[Lamar](Lamar.md)\
-[Lauderdale](Lauderdale.md)\
-[Lawrence](Lawrence.md)\
-[Lee](Lee.md)\
-[Limestone](Limestone.md)\
-[Lowndes](Lowndes.md)\
-[Macon](Macon.md)\
-[Madison](Madison.md)\
-[Marengo](Marengo.md)\
-[Marion](Marion.md)\
-[Marshall](Marshall.md)\
-[Mobile](Mobile.md)\
-[Monroe](Monroe.md)\
-[Montgomery](Montgomery.md)\
-[Morgan](Morgan.md)\
-[Perry](Perry.md)\
-[Pickens](Pickens.md)\
-[Pike](Pike.md)\
-[Randolph](Randolph.md)\
-[Russell](Russell.md)\
-[St_Clair](St_Clair.md)\
-[Shelby](Shelby.md)\
-[Sumter](Sumter.md)\
-[Talladega](Talladega.md)\
-[Tallapoosa](Tallapoosa.md)\
-[Tuscaloosa](Tuscaloosa.md)\
-[Walker](Walker.md)\
-[Washington](Washington.md)\
-[Wilcox](Wilcox.md)\
+[Autauga](Autauga.md) \
+[Baldwin](Baldwin.md) \
+[Barbour](Barbour.md) \
+[Bibb](Bibb.md) \
+[Blount](Blount.md) \
+[Bullock](Bullock.md) \
+[Butler](Butler.md) \
+[Calhoun](Calhoun.md) \
+[Chambers](Chambers.md) \
+[Cherokee](Cherokee.md) \
+[Chilton](Chilton.md) \
+[Choctaw](Choctaw.md) \
+[Clarke](Clarke.md) \
+[Clay](Clay.md) \
+[Cleburne](Cleburne.md) \
+[Coffee](Coffee.md) \
+[Colbert](Colbert.md) \
+[Conecuh](Conecuh.md) \
+[Coosa](Coosa.md) \
+[Covington](Covington.md) \
+[Crenshaw](Crenshaw.md) \
+[Cullman](Cullman.md) \
+[Dale](Dale.md) \
+[Dallas](Dallas.md) \
+[DeKalb](DeKalb.md) \
+[Elmore](Elmore.md) \
+[Escambia](Escambia.md) \
+[Etowah](Etowah.md) \
+[Fayette](Fayette.md) \
+[Franklin](Franklin.md) \
+[Geneva](Geneva.md) \
+[Greene](Greene.md) \
+[Hale](Hale.md) \
+[Henry](Henry.md) \
+[Houston](Houston.md) \
+[Jackson](Jackson.md) \
+[Jefferson](Jefferson.md) \
+[Lamar](Lamar.md) \
+[Lauderdale](Lauderdale.md) \
+[Lawrence](Lawrence.md) \
+[Lee](Lee.md) \
+[Limestone](Limestone.md) \
+[Lowndes](Lowndes.md) \
+[Macon](Macon.md) \
+[Madison](Madison.md) \
+[Marengo](Marengo.md) \
+[Marion](Marion.md) \
+[Marshall](Marshall.md) \
+[Mobile](Mobile.md) \
+[Monroe](Monroe.md) \
+[Montgomery](Montgomery.md) \
+[Morgan](Morgan.md) \
+[Perry](Perry.md) \
+[Pickens](Pickens.md) \
+[Pike](Pike.md) \
+[Randolph](Randolph.md) \
+[Russell](Russell.md) \
+[St_Clair](St_Clair.md) \
+[Shelby](Shelby.md) \
+[Sumter](Sumter.md) \
+[Talladega](Talladega.md) \
+[Tallapoosa](Tallapoosa.md) \
+[Tuscaloosa](Tuscaloosa.md) \
+[Walker](Walker.md) \
+[Washington](Washington.md) \
+[Wilcox](Wilcox.md) \
 [Winston](Winston.md)

@@ -1,5 +1,9 @@
 # Arkansas
-Be sure to check your specific county above to see if you have additional tips for your location\
+
+### State-wide Notes
+Be sure to check your specific county above to see if you have additional tips for your location
+
+### Counties
 [Arkansas](Arkansas.md)\
 [Ashley](Ashley.md)\
 [Baxter](Baxter.md)\

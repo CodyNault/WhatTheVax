@@ -5,12 +5,8 @@ This shouldnt even be a thing but here we are. For some reason it seemed like a 
 Now there are thousands of different portals for registering for the vaccine, each with their own problems. 
 
 ### Why our website is on GitHub
-This way anyone with moderate technical skill can contribute what tips they have found for registering for vaccines in their county
+This way anyone with moderate technical skill can contribute what tips they have found for registering for vaccines in their county. Instructions for contibuting are at the bottom of this page.
 
-### Who we are
-
-Cody Nault - (CodyTheCoder)
-and anyone else who want to help me!
 
 ### States
 
@@ -72,7 +68,16 @@ and anyone else who want to help me!
 [Wisconsin](Wisconsin/README.md) \
 [Wyoming](Wyoming/README.md) 
 
+### Who we are
 
+Cody Nault - (CodyTheCoder)
+and anyone else who want to help me!
+
+### How to Contribute
+
+Using a github account submit a pull request https://guides.github.com/activities/forking/
+to the project https://github.com/CodyNault/WhatTheVax
+If you dont know what any of this means, ask a programmer or techy friend and they should be able to help.
 
 ## License
 This manual is open sourced under a [Creative Commons license](http://creativecommons.org/licenses/by/3.0/deed.en_US).

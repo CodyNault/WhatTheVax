@@ -1,4 +1,4 @@
-Here are some other info sites I check often.
+Here are some other info sites to check often as things keep changing.
 
 https://covidvaccine.oregon.gov/
 

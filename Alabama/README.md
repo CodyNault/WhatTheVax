@@ -1,6 +1,7 @@
 # Alabama
 Be sure to check your specific county above to see if you have additional tips for your location\
 [Autauga](Autauga.md)\
+[Autauga](Autauga.md)\
 [Baldwin](Baldwin.md)\
 [Barbour](Barbour.md)\
 [Bibb](Bibb.md)\

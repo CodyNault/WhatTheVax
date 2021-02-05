@@ -14,8 +14,8 @@ and anyone else who want to help me!
 
 ### States
 
-[Alabama](Alabama/README.md) \pagebreak
-[Alaska](Alaska/README.md)
+[Alabama](Alabama/README.md) \
+[Alaska](Alaska/README.md) \
 
 ## License
 This manual is open sourced under a [Creative Commons license](http://creativecommons.org/licenses/by/3.0/deed.en_US).

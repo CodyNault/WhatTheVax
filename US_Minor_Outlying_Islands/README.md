@@ -1,5 +1,9 @@
 # US_Minor_Outlying_Islands
-Be sure to check your specific county above to see if you have additional tips for your location\
+
+### State-wide Notes
+Be sure to check your specific county above to see if you have additional tips for your location
+
+### Counties
 [Bajo_Nuevo_Bank](Bajo_Nuevo_Bank.md)\
 [Baker_Island](Baker_Island.md)\
 [Howland_Island](Howland_Island.md)\

@@ -70,7 +70,7 @@ and anyone else who want to help me!
 [Washington](Washington/README.md) \
 [West_Virginia](West_Virginia/README.md) \
 [Wisconsin](Wisconsin/README.md) \
-[Wyoming](Wyoming/README.md) \
+[Wyoming](Wyoming/README.md) 
 
 
 

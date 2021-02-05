@@ -38,16 +38,16 @@ Be sure to check your specific county above to see if you have additional tips f
 [Plumas](Plumas.md)\
 [Riverside](Riverside.md)\
 [Sacramento](Sacramento.md)\
-[San_Benito](San_Benito.md)\
-[San_Bernardino](San_Bernardino.md)\
-[San_Diego](San_Diego.md)\
-[San_Francisco](San_Francisco.md)\
-[San_Joaquin](San_Joaquin.md)\
-[San_Luis_Obispo](San_Luis_Obispo.md)\
-[San_Mateo](San_Mateo.md)\
-[Santa_Barbara](Santa_Barbara.md)\
-[Santa_Clara](Santa_Clara.md)\
-[Santa_Cruz](Santa_Cruz.md)\
+[San Benito](San_Benito.md)\
+[San Bernardino](San_Bernardino.md)\
+[San Diego](San_Diego.md)\
+[San Francisco](San_Francisco.md)\
+[San Joaquin](San_Joaquin.md)\
+[San Luis Obispo](San_Luis_Obispo.md)\
+[San Mateo](San_Mateo.md)\
+[Santa Barbara](Santa_Barbara.md)\
+[Santa Clara](Santa_Clara.md)\
+[Santa Cruz](Santa_Cruz.md)\
 [Shasta](Shasta.md)\
 [Sierra](Sierra.md)\
 [Siskiyou](Siskiyou.md)\

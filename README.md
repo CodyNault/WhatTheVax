@@ -23,7 +23,7 @@ and anyone else who want to help me!
 [Colorado](Colorado/README.md) \
 [Connecticut](Connecticut/README.md) \
 [Delaware](Delaware/README.md) \
-[District_of_Columbia](District_of_Columbia/README.md) \
+[District of Columbia](District_of_Columbia/README.md) \
 [Florida](Florida/README.md) \
 [Georgia](Georgia/README.md) \
 [Guam](Guam/README.md) \
@@ -45,30 +45,30 @@ and anyone else who want to help me!
 [Montana](Montana/README.md) \
 [Nebraska](Nebraska/README.md) \
 [Nevada](Nevada/README.md) \
-[New_Hampshire](New_Hampshire/README.md) \
-[New_Jersey](New_Jersey/README.md) \
-[New_Mexico](New_Mexico/README.md) \
-[New_York](New_York/README.md) \
-[North_Carolina](North_Carolina/README.md) \
-[North_Dakota](North_Dakota/README.md) \
-[Northern_Mariana_Islands](Northern_Mariana_Islands/README.md) \
+[New Hampshire](New_Hampshire/README.md) \
+[New Jersey](New_Jersey/README.md) \
+[New Mexico](New_Mexico/README.md) \
+[New York](New_York/README.md) \
+[North Carolina](North_Carolina/README.md) \
+[North Dakota](North_Dakota/README.md) \
+[Northern Mariana Islands](Northern_Mariana_Islands/README.md) \
 [Ohio](Ohio/README.md) \
 [Oklahoma](Oklahoma/README.md) \
 [Oregon](Oregon/README.md) \
 [Pennsylvania](Pennsylvania/README.md) \
-[Puerto_Rico](Puerto_Rico/README.md) \
-[Rhode_Island](Rhode_Island/README.md) \
-[South_Carolina](South_Carolina/README.md) \
-[South_Dakota](South_Dakota/README.md) \
+[Puerto Rico](Puerto_Rico/README.md) \
+[Rhode Island](Rhode_Island/README.md) \
+[South Carolina](South_Carolina/README.md) \
+[South Dakota](South_Dakota/README.md) \
 [Tennessee](Tennessee/README.md) \
 [Texas](Texas/README.md) \
-[US_Minor_Outlying_Islands](US_Minor_Outlying_Islands/README.md) \
+[US Minor Outlying Islands](US_Minor_Outlying_Islands/README.md) \
 [Utah](Utah/README.md) \
 [Vermont](Vermont/README.md) \
-[Virgin_Islands](Virgin_Islands/README.md) \
+[Virgin Islands](Virgin_Islands/README.md) \
 [Virginia](Virginia/README.md) \
 [Washington](Washington/README.md) \
-[West_Virginia](West_Virginia/README.md) \
+[West Virginia](West_Virginia/README.md) \
 [Wisconsin](Wisconsin/README.md) \
 [Wyoming](Wyoming/README.md) 
 

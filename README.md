@@ -1,8 +1,7 @@
 # What The Vax
 
 ### Why This Exists
-This shouldnt even be a thing but here we are. For some reason it seemed like a good idea to leave every county to figure out distribution on their own.
-Now there are thousands of different portals for registering for the vaccine, each with their own problems. At least now we can post the links, tips, comments specific to your county/location in the US and have it all in one place.
+This shouldnt even be a thing but here we are. For some reason The United States decided to let every state decide how to ditribute the Covid vaccines and then most states decided to let the Counties figure it out on their own. Because of this there are now thousands of different websites/portals for registering for the vaccine, each with their own problems. Many have poor design or technical difficulties and we found that the most at-risk people like the elderly can't figure out how to register. We decided to make a single site where we would collect links, tips, comments specific to each county/location in the US and have it all in one place.
 
 ### This Information is from Unofficial Community Submissions 
 Keep in mind, this is a collection of links and tips submitted from memebers of the community not any official organization. We do not guarantee that any of this information is accurate. If you identify any innacurate information please submit the correct information to the projet. Instructions for contibuting are at the bottom of this page.

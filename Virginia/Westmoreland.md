@@ -1,0 +1,1 @@
+No tips submitted for this location yet.

@@ -14,7 +14,7 @@ and anyone else who want to help me!
 
 ### States
 
-[Alabama](Alabama/README.md)
+[Alabama](Alabama/README.md) \pagebreak
 [Alaska](Alaska/README.md)
 
 ## License

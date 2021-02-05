@@ -5,7 +5,7 @@ This shouldnt even be a thing but here we are. For some reason it seemed like a 
 Now there are thousands of different portals for registering for the vaccine, each with their own problems. 
 
 ### Why our website is on GitHub
-This way anyone with moderate technical skill can contribute the 
+This way anyone with moderate technical skill can contribute what tips they have found for registering for vaccines in their county
 
 ### Who we are
 

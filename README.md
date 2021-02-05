@@ -16,7 +16,7 @@ and anyone else who want to help me!
 
 [Alabama](Alabama/README.md) \
 [Alaska](Alaska/README.md) \
-[American_Samoa](American_Samoa/README.md) \
+[American Samoa](American_Samoa/README.md) \
 [Arizona](Arizona/README.md) \
 [Arkansas](Arkansas/README.md) \
 [California](California/README.md) \

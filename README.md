@@ -75,8 +75,8 @@ and anyone else who want to help me!
 ### How to Contribute
 
 We are hosting this site on github. This way anyone with moderate technical skill can contribute what tips they have found for registering for covid vaccines in their county.
-Using a github account submit a pull request https://guides.github.com/activities/forking/
-to the project https://github.com/CodyNault/WhatTheVax
+Using a github account submit a pull request [https://guides.github.com/activities/forking/](https://guides.github.com/activities/forking/)
+to the project [https://github.com/CodyNault/WhatTheVax](https://github.com/CodyNault/WhatTheVax)
 If you dont know what any of this means, ask a programmer or techy friend and they should be able to help.
 
 ## License

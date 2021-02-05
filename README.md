@@ -2,7 +2,7 @@
 
 ### Why we exist
 This shouldnt even be a thing but here we are. For some reason it seemed like a good idea to leave every county to figure out distribution on their own.
-Now there are thousands of different portals for registering for the vaccine, each with their own problems. 
+Now there are thousands of different portals for registering for the vaccine, each with their own problems. At least now we can post the links, tips, comments specific to your county/location in the US and have it all in one place.
 
 ### Why our website is on GitHub
 This way anyone with moderate technical skill can contribute what tips they have found for registering for vaccines in their county. Instructions for contibuting are at the bottom of this page.

@@ -81,7 +81,7 @@ We are hosting this site on github. This way anyone with moderate technical skil
 4. Edit the file test (To make it look organized with headings and links, see the [Markdown Cheatsheet](https://commonmark.org/help/) 
 5. Preview the changes 
 6. Commit and submit a pull request 
-7. Thats it. I will try to approve things as quick as possible.
+7. Thats it. I will try to approve things as quick as possible. \
 If you dont know what any of this means, ask a programmer or techy friend and they should be able to help.
 
 ## License

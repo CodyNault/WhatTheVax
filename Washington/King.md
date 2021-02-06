@@ -1,1 +1,4 @@
-No tips submitted for this location yet.
+# King - Washington
+
+### County Website
+[https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations](https://www.doh.wa.gov/YouandYourFamily/Immunization/VaccineLocations )

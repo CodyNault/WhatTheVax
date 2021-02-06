@@ -1,7 +1,7 @@
 # San Bernardino - California
 
 ## Info as of 2/5/21
-## Appoitments
+## Appointments
 Seems like there are a bunch of reliable links here: [https://sbcovid19.com/vaccine/locations/#load](https://sbcovid19.com/vaccine/locations/#load)
 For example:
 Ontario Convention Center

@@ -1,1 +1,4 @@
-No tips submitted for this location yet.
+# Colusa - California
+
+## County Website:
+[https://www.countyofcolusa.org/949/Vaccine](https://www.countyofcolusa.org/949/Vaccine)

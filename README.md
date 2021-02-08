@@ -78,7 +78,7 @@ We are hosting this site on github. This way anyone with moderate technical skil
 1. Register for a github account at  [https://github.com/](https://github.com) if you dont already have one. 
 2. Go to the project [https://github.com/CodyNault/WhatTheVax](https://github.com/CodyNault/WhatTheVax) 
 3. Navigate to the file you wish to edit and click edit (This will trigger a fork of the prject) 
-4. Edit the file by clicking the pencil in upper right corner. (To make it look organized with headings and links, see the [Markdown Cheatsheet](https://commonmark.org/help/) 
+4. Edit the file by clicking the pencil in upper right corner. (To make it look organized with headings and links, see the [Markdown Cheatsheet](https://paperhive.org/help/markdown) 
 5. Propose the changes button (Bottom of screen)
 6. Submit a Pull Request (green button at the top) (You can include a note explaining your changes if it is helpful)
 7. That's it. I will try to approve things as quick as possible. \

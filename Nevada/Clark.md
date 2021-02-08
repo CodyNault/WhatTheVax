@@ -1,6 +1,8 @@
+# Clark - Nevada
+
 Primary site for vaccination reservations is Southern Nevada Health District
 
-http://covid.southernnevadahealthdistrict.org/vaccine/distribution/
+[http://covid.southernnevadahealthdistrict.org/vaccine/distribution/](http://covid.southernnevadahealthdistrict.org/vaccine/distribution/)
 
 As of Feb. 7, it's for first responders and over 70.
 

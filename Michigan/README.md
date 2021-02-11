@@ -1,7 +1,8 @@
 # Michigan
 
 ### State-wide Notes
-Be sure to check your specific county above to see if you have additional tips for your location
+
+Meijer stores in Michigan are now administering vaccines for adults 65+. Details and registration can be found at https://clinic.meijer.com/
 
 ### Counties
 [Alcona](Alcona.md)\

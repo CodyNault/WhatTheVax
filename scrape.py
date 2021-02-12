@@ -24,7 +24,7 @@ import random
 from datetime import datetime
 import csv
 
-from googlesearch import get_random_user_agent, search
+from googlesearch import get_random_user_agent
 from search_engines import *
 
 # Minimum wait time between calling an engine for different searches (in
@@ -56,12 +56,7 @@ search_engines = [
 def main():
     with open('county_list.csv', newline='') as f:
         r = csv.reader(f, delimiter=',')
-        n = 0
         for row in r:
-            n += 1
-            if n > 10:
-                break
-
             county, state = row[0], row[1]
             prush("{}, {}...".format(county, state))
 

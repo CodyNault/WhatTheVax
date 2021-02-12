@@ -74,11 +74,11 @@ def main():
 
             engine_times[engine_name] = datetime.now()
 
-            old_file = open(state + "/" + county + ".md", "w")
-            markdown = old_file.read()
+            markdown = ""
+            with open(state + "/" + county + ".md", "r") as county_file:
+                markdown = county_file.read()
 
             if search_results[0] in markdown:
-                old_file.close()
                 continue
 
             if "No tips submitted for this location yet" in markdown:
@@ -86,8 +86,9 @@ def main():
 
             markdown = "{}\n\n{}\n{}\n{}".format(
                 markdown, subject, search_results[0], datetime.now())
-            old_file.write(markdown)
-            old_file.close()
+
+            with open(state + "/" + county + ".md", "w") as county_file:
+                county_file.write(markdown)
 
 
 def prush(*args):

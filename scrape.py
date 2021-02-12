@@ -141,11 +141,11 @@ def replace_underscores(s):
 
 
 def fmt_title(engine_name, subject):
-    return "### '{}' Search for **'{}'**".format(engine_name, subject)
+    return "\n\n<br>\n\n---\n### '{}' Search for **'{}'**".format(engine_name, subject)
 
 
 def fmt_access_time():
-    return "*(Retrieved on {})*".format(
+    return "*Retrieved {}*".format(
         datetime.utcnow().strftime("%A, %B %-d, %Y at %-I:%M%p (UTC)"))
 
 
@@ -158,7 +158,7 @@ def fmt_uri(uri):
 
 
 def fmt_entry(title, uri, access_time):
-    return "---{}\n\n{}\n\n{}".format(title, access_time, uri)
+    return "{}\n\n{}\n\n{}".format(title, access_time, uri)
 
 
 def prush(*args):

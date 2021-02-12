@@ -37,7 +37,7 @@ ENGINE_MIN_COOLDOWN_SECS = 3.0
 # 'random' waiting period is imposed between the preferred and alternate calls
 # to reduce the likelyhood of getting rate-limited.
 ALTERNATE_SEARCH_MIN_WAIT_SECS = 0.2
-ALTERNATE_SEARCH_MAX_WAIT_SECS = 2.0
+ALTERNATE_SEARCH_MAX_WAIT_SECS = 1.0
 
 # The number of pages worth of search results to consider from each search
 # attempt.

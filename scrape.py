@@ -75,6 +75,8 @@ def main():
 
             engine_times[engine_name] = datetime.now()
 
+            title = "{} Search for '{}':".format(engine_name, subject)
+
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:
                 markdown = county_file.read()
@@ -84,10 +86,10 @@ def main():
 
             if len(markdown.strip()) == 0 or "no tips submitted for this location yet" in markdown.lower():
                 markdown = "Covid tips for {}, {}\n\n{}\n{}\n{}".format(
-                    county, state, subject, search_results[0], datetime.now())
+                    county, state, title, search_results[0], datetime.now())
             else:
                 markdown = "{}\n\n{}\n{}\n{}".format(
-                    markdown, subject, search_results[0], datetime.now())
+                    markdown, title, search_results[0], datetime.now())
 
             with open(state + "/" + county + ".md", "w") as county_file:
                 county_file.write(markdown)

@@ -70,7 +70,7 @@ def main():
         engine_times = dict()
         r = csv.reader(f, delimiter=',')
         for row in r:
-            county, state = row[0], row[1]
+            county, state = replace_underscores(row[0]), replace_underscores(row[1])
             prush("{}, {}...".format(county, state))
 
             time_since_last_use = 0
@@ -108,7 +108,7 @@ def main():
 
             title = fmt_title(engine_name, subject)
             access_time = fmt_access_time()
-
+                
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:
                 markdown = county_file.read()
@@ -131,6 +131,10 @@ def select_best_search_result(search_results):
     # currently implemented to just return the top result, this could be
     # extended in any number of ways.
     return search_results[0]
+
+
+def replace_underscores(s):
+    return s.replace("_", " ")
 
 
 def fmt_title(engine_name, subject):

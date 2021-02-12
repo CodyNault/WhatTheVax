@@ -139,7 +139,7 @@ def replace_underscores(s):
 
 
 def fmt_title(engine_name, subject):
-    return "{} Search for '{}'".format(engine_name, subject)
+    return "### '{}' Search for **'{}'**".format(engine_name, subject)
 
 
 def fmt_access_time():

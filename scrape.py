@@ -161,7 +161,7 @@ def get_prioritized_county_list():
     # Naive quartile implementation is safe so long as we have many counties to
     # work from.
     county_info_list = sorted(county_info_list, key=lambda x: x.density)
-    quartile_size = len(county_info_list) / 4
+    quartile_size = len(county_info_list) // 4
     q1 = county_info_list[quartile_size*0:quartile_size*1]
     q2 = county_info_list[quartile_size*1:quartile_size*2]
     q3 = county_info_list[quartile_size*2:quartile_size*3]

@@ -158,7 +158,7 @@ def fmt_uri(uri):
 
 
 def fmt_entry(title, uri, access_time):
-    return "\n\n{}\n{}\n{}".format(title, uri, access_time)
+    return "\n\n{}\n\n{}\n\n{}".format(title, access_time, uri)
 
 
 def prush(*args):

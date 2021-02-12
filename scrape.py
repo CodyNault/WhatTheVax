@@ -23,18 +23,29 @@ import sys
 import random
 from datetime import datetime
 import csv
+import time
 
 from googlesearch import get_random_user_agent
 from search_engines import *
 
-# Minimum wait time between calling an engine for different searches (in
-# seconds)
-ENGINE_COOLDOWN_TIME = 5
+# The minimum cooldown period between successive preferred search calls to the
+# same engine.
+ENGINE_MIN_COOLDOWN_SECS = 3.0
+
+# If the preferred search template does not return unseful results, the same
+# engine will be called a second time with an alternate search template.  A
+# 'random' waiting period is imposed between the preferred and alternate calls
+# to reduce the likelyhood of getting rate-limited.
+ALTERNATE_SEARCH_MIN_WAIT_SECS = 0.2
+ALTERNATE_SEARCH_MAX_WAIT_SECS = 2.0
+
 # The number of pages worth of search results to consider from each search
 # attempt.
 SEARCH_PAGES = 1
 NO_TIPS_PLACEHOLDER = "No tips submitted for this location yet"
 
+# The ideal search phrase to use to extract desired information.  If this
+# phrase fails to provide useful results, the alternate template is used.
 PREFERRED_SEARCH_TEMPLATE = "site:gov {} County {} covid vaccine access"
 ALTERNATE_SEARCH_TEMPLATE = "{} County {} covid vaccine access"
 
@@ -54,38 +65,44 @@ search_engines = [
 
 def main():
     with open('county_list.csv', newline='') as f:
+        engine_times = dict()
         r = csv.reader(f, delimiter=',')
         for row in r:
             county, state = row[0], row[1]
             prush("{}, {}...".format(county, state))
 
-            engine_times = dict()
             time_since_last_use = 0
             engine_name = ""
             while True:
+                # This does basically constitute a busy loop if all engines are
+                # in a cooldown period, but since this is single threaded, I'm
+                # not too concerned.
                 engine = random.choice(search_engines)()
                 engine_name = engine.__class__.__name__
                 if not engine_name in engine_times:
                     break
                 time_since_last_use = (
                     datetime.now() - engine_times[engine_name]).total_seconds()
-                if time_since_last_use < ENGINE_COOLDOWN_TIME:
-                    prush("Engine '{}' used too recently. Trying another...".format(
-                        engine_name))
-                else:
+                if time_since_last_use >= ENGINE_MIN_COOLDOWN_SECS:
                     break
 
             engine.set_headers({'User-Agent': get_random_user_agent()})
             subject = PREFERRED_SEARCH_TEMPLATE.format(county, state)
             search_results = engine.search(subject, pages=SEARCH_PAGES).links()
+            engine_times[engine_name] = datetime.now()
 
             if len(search_results) == 0:
                 subject = ALTERNATE_SEARCH_TEMPLATE.format(
                     county, state)
+
+                # Random-uniform wait period between successive calls to same
+                # engine adds some delay and jitter to the calls, making it
+                # just slightly harder to get rate-limited.
+                time.sleep(random.uniform(
+                    ALTERNATE_SEARCH_MIN_WAIT_SECS, ALTERNATE_SEARCH_MAX_WAIT_SECS))
+
                 search_results = engine.search(
                     subject, pages=SEARCH_PAGES).links()
-
-            engine_times[engine_name] = datetime.now()
 
             title = fmt_title(engine_name, subject)
             access_time = fmt_access_time()

@@ -78,7 +78,7 @@ def main():
             with open(state + "/" + county + ".md", "r") as county_file:
                 markdown = county_file.read()
 
-            if search_results[0] in markdown:
+            if len(search_results) == 0 or search_results[0] in markdown:
                 continue
 
             if "No tips submitted for this location yet" in markdown:

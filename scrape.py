@@ -47,7 +47,6 @@ search_engines = [
     # with the search engine randomization and pacing their heuristics tend to
     # ban scapers really quickly.
     # Google,
-    Mojeek,
     Startpage,
     Yahoo
 ]

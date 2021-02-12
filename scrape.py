@@ -4,13 +4,12 @@ from contextlib import contextmanager
 import os.path
 import random
 from datetime import datetime
+import csv
 
 from googlesearch import get_random_user_agent
 from search_engines import *
 
 
-USNEWS = "http://usnews.com/topics/subjects"
-REQUEST_TIMEOUT = 30
 ASYNC_REQUEST_LIMIT = 25
 PAGE_LOAD_WAIT = 1
 SUBJECT_XPATH = "//div[{}]/ul/li/a/text()"
@@ -27,11 +26,27 @@ search_engines = [
 ]
 
 
+def main():
+    # open the county list csv
+    with open('county_list.csv', newline='') as f:
+        r = csv.reader(f, delimiter=',')
+        # for each county/state tuple
+        for row in r:
+            county, state = row[0], row[1]
+            print(county, state)
+        # choose a random search engine
+
+        # search for `site:gov <county> county <state> covid vaccine`
+        # open the info file for the specified state and county
+        # if the directory/file doesn't exist, add it
+        # if the contents of the file is [whitespace]No tips submitted for this location yet.[whitespace] then truncate the file
+        # append the link, link description, source (this scraper), and MLA citation to the file in md format
+        # move to the next county
+
+
 def build_codex(doc_count=1000, subjects_dir="research/data/arbitrary", destination_dir="research/data/arbitrary/codex"):
-    """Builds a set of documents by collecting arbitrary content from the web
-    based on a provided list of subjects.
-    """
-    SUBJECT_BATCH_SIZE = 10     # Number of documents to try to retrieve for each subject-batch.
+    # Number of documents to try to retrieve for each subject-batch.
+    SUBJECT_BATCH_SIZE = 10
     # Number of pages of results to request per engine per batch.
     SEARCH_PAGES = 5
     ENGINE_COOLDOWN_TIME = 5
@@ -139,4 +154,4 @@ def time_limit(seconds):
 
 
 if __name__ == "__main__":
-    build_codex()
+    main()

@@ -117,7 +117,9 @@ def main():
             if len(search_results) == 0 or search_results[0] in markdown:
                 continue
 
-            uri = select_best_search_result(search_results)
+            best_result = select_best_search_result(search_results)
+            
+            uri = fmt_uri(best_result)
 
             if len(markdown.strip()) == 0 or NO_TIPS_PLACEHOLDER.lower() in markdown.lower():
                 markdown = fmt_page_heading(county, state)
@@ -149,6 +151,10 @@ def fmt_access_time():
 
 def fmt_page_heading(county, state):
     return "## Covid tips for {}, {}\n---".format(county, state)
+
+
+def fmt_uri(uri):
+    return "**Link: [uri](uri)**"
 
 
 def fmt_entry(title, uri, access_time):

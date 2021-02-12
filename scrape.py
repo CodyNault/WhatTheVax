@@ -136,10 +136,28 @@ def main():
                 county_file.write(markdown)
 
 
+class CountyInfo:
+    def __init__(self, county, state, density):
+        self.county = county
+        self.state = state
+        self.density = density
+
+
 def select_best_search_result(search_results):
-    # currently implemented to just return the top result, this could be
-    # extended in any number of ways.
-    return search_results[0]
+    county_info_list = []
+    with open('county_list.csv', newline='') as f:
+        r = csv.reader(f, delimiter=',')
+        for row in r:
+            county, state = row[0], row[1]
+            with open(state + "/" + county + ".md", "r") as county_file:
+                density = calculate_information_density(county_file.read())
+                county_info_list.append(CountyInfo(county, state, density))
+
+
+def calculate_information_density(text):
+    """estimate information density based on the count of non-whitespace
+    characters in the text"""
+    return len(["" if c in ['\n', '\r', '\t', ' '] else c for c in text])
 
 
 def replace_underscores(s):

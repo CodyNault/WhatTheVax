@@ -70,7 +70,8 @@ def main():
         engine_times = dict()
         r = csv.reader(f, delimiter=',')
         for row in r:
-            county, state = replace_underscores(row[0]), replace_underscores(row[1])
+            county, state = replace_underscores(
+                row[0]), replace_underscores(row[1])
             prush("{}, {}...".format(county, state))
 
             time_since_last_use = 0
@@ -108,7 +109,7 @@ def main():
 
             title = fmt_title(engine_name, subject)
             access_time = fmt_access_time()
-                
+
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:
                 markdown = county_file.read()
@@ -147,7 +148,7 @@ def fmt_access_time():
 
 
 def fmt_page_heading(county, state):
-    return "## Covid tips for {}, {}".format(county, state)
+    return "## Covid tips for {}, {}\n---".format(county, state)
 
 
 def fmt_entry(title, uri, access_time):

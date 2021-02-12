@@ -112,8 +112,13 @@ def main():
         access_time = fmt_access_time()
 
         markdown = ""
-        with open(state + "/" + county + ".md", "r") as county_file:
-            markdown = county_file.read()
+        file_name = state + "/" + county + ".md"
+        try:
+            with open(file_name, "r") as county_file:
+                markdown = county_file.read()
+        except:
+            print("unable to open {}", file_name)
+            continue
 
         if len(search_results) == 0 or search_results[0] in markdown:
             continue
@@ -140,13 +145,18 @@ class CountyInfo:
 
 def get_prioritized_county_list():
     county_info_list = []
-    with open('county_list.csv', newline='') as f:
+    with open('county_list.csv', newline='', encoding='iso8859_15') as f:
         r = csv.reader(f, delimiter=',')
         for row in r:
+            print(row)
             county, state = row[0], row[1]
-            with open(state + "/" + county + ".md", "r") as county_file:
-                density = calculate_information_density(county_file.read())
-                county_info_list.append(CountyInfo(county, state, density))
+            file_name = state + "/" + county + ".md"
+            try:
+                with open(file_name, "r") as county_file:
+                    density = calculate_information_density(county_file.read())
+                    county_info_list.append(CountyInfo(county, state, density))
+            except:
+                print("unable to open '{}'".format(file_name))
 
     # Naive quartile implementation is safe so long as we have many counties to
     # work from.

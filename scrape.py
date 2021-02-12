@@ -42,6 +42,8 @@ ALTERNATE_SEARCH_MAX_WAIT_SECS = 2.0
 # The number of pages worth of search results to consider from each search
 # attempt.
 SEARCH_PAGES = 1
+
+# This is not case sensitive.
 NO_TIPS_PLACEHOLDER = "No tips submitted for this location yet"
 
 # The ideal search phrase to use to extract desired information.  If this
@@ -114,15 +116,21 @@ def main():
             if len(search_results) == 0 or search_results[0] in markdown:
                 continue
 
-            uri = search_results[0]
+            uri = select_best_search_result(search_results)
 
-            if len(markdown.strip()) == 0 or NO_TIPS_PLACEHOLDER in markdown.lower():
+            if len(markdown.strip()) == 0 or NO_TIPS_PLACEHOLDER.lower() in markdown.lower():
                 markdown = fmt_page_heading(county, state)
 
             markdown = markdown + fmt_entry(title, uri, access_time)
 
             with open(state + "/" + county + ".md", "w") as county_file:
                 county_file.write(markdown)
+
+
+def select_best_search_result(search_results):
+    # currently implemented to just return the top result, this could be
+    # extended in any number of ways.
+    return search_results[0]
 
 
 def fmt_title(engine_name, subject):

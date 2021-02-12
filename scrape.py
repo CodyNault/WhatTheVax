@@ -70,9 +70,14 @@ def main():
         engine_times = dict()
         r = csv.reader(f, delimiter=',')
         for row in r:
-            county, state = replace_underscores(
-                row[0]), replace_underscores(row[1])
-            prush("{}, {}...".format(county, state))
+            # use these instances to access files (may contain underscores)
+            county, state = row[0], row[1]
+
+            # use these values for search queries and formatted output
+            county_clean, state_clean = replace_underscores(
+                county), replace_underscores(state)
+
+            prush("{}, {}...".format(county_clean, state_clean))
 
             time_since_last_use = 0
             engine_name = ""
@@ -90,13 +95,14 @@ def main():
                     break
 
             engine.set_headers({'User-Agent': get_random_user_agent()})
-            subject = PREFERRED_SEARCH_TEMPLATE.format(county, state)
+            subject = PREFERRED_SEARCH_TEMPLATE.format(
+                county_clean, state_clean)
             search_results = engine.search(subject, pages=SEARCH_PAGES).links()
             engine_times[engine_name] = datetime.now()
 
             if len(search_results) == 0:
                 subject = ALTERNATE_SEARCH_TEMPLATE.format(
-                    county, state)
+                    county_clean, state_clean)
 
                 # Random-uniform wait period between successive calls to same
                 # engine adds some delay and jitter to the calls, making it

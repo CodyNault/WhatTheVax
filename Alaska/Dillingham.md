@@ -1,1 +1,5 @@
-No tips submitted for this location yet.
+## Covid tips for Dillingham, Alaska
+
+Bing Search for 'site:gov Dillingham County Alaska covid vaccine access'
+http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/vaccine.aspx
+Retrieved on Friday, February 12, 2021 at 5:38AM (UTC)

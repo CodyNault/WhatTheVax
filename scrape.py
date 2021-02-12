@@ -144,6 +144,15 @@ class CountyInfo:
 
 
 def get_prioritized_county_list():
+    """the scraper prioritizes its work such that counties with less recorded
+    information are addressed before counties with more information. This is
+    accomplished by dividing the counties into quartiles based on an estimate
+    of the amount of information collected for each county (the first quartile
+    being counties with the least recorded information). Within each
+    quartile, the counties are randomized.  This allows the scraper to cast a
+    broader net each time it runs. This helps ensure that each county still has
+    a good chance at being scraped even if the scraper is only able to run for
+    short periods of time."""
     county_info_list = []
     with open('county_list.csv', newline='', encoding='iso8859_15') as f:
         r = csv.reader(f, delimiter=',')

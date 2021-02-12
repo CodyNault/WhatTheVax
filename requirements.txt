@@ -1,0 +1,2 @@
+google==2.0.3
+git+https://github.com/tasos-py/Search-Engines-Scraper#egg=search_engines

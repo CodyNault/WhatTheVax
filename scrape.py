@@ -118,7 +118,7 @@ def main():
                 continue
 
             best_result = select_best_search_result(search_results)
-            
+
             uri = fmt_uri(best_result)
 
             if len(markdown.strip()) == 0 or NO_TIPS_PLACEHOLDER.lower() in markdown.lower():
@@ -145,7 +145,7 @@ def fmt_title(engine_name, subject):
 
 
 def fmt_access_time():
-    return "Retrieved on {}".format(
+    return "*(Retrieved on {})*".format(
         datetime.utcnow().strftime("%A, %B %-d, %Y at %-I:%M%p (UTC)"))
 
 
@@ -154,7 +154,7 @@ def fmt_page_heading(county, state):
 
 
 def fmt_uri(uri):
-    return "**Link: [uri](uri)**"
+    return "**Link: [{}]({})**".format(uri, uri)
 
 
 def fmt_entry(title, uri, access_time):

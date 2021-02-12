@@ -82,7 +82,7 @@ def main():
             if len(search_results) == 0 or search_results[0] in markdown:
                 continue
 
-            if "No tips submitted for this location yet" in markdown:
+            if len(markdown.strip()) == 0 or "no tips submitted for this location yet" in markdown.lower():
                 markdown = "Covid tips for {}, {}\n\n{}\n{}\n{}".format(
                     county, state, subject, search_results[0], datetime.now())
             else:

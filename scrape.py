@@ -150,7 +150,7 @@ def fmt_access_time():
 
 
 def fmt_page_heading(county, state):
-    return "## Covid tips for {}, {}\n---".format(county, state)
+    return "## Covid tips for {}, {}\n".format(county, state)
 
 
 def fmt_uri(uri):
@@ -158,7 +158,7 @@ def fmt_uri(uri):
 
 
 def fmt_entry(title, uri, access_time):
-    return "\n\n{}\n\n{}\n\n{}".format(title, access_time, uri)
+    return "---{}\n\n{}\n\n{}".format(title, access_time, uri)
 
 
 def prush(*args):

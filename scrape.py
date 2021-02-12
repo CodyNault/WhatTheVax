@@ -75,7 +75,7 @@ def main():
 
             engine_times[engine_name] = datetime.now()
 
-            title = "{} Search for '{}':".format(engine_name, subject)
+            title = "## {} Search for '{}':".format(engine_name, subject)
 
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:

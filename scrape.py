@@ -24,16 +24,19 @@ import random
 from datetime import datetime
 import csv
 
-from googlesearch import get_random_user_agent
+from googlesearch import get_random_user_agent, search
 from search_engines import *
 
 # Minimum wait time between calling an engine for different searches (in
 # seconds)
 ENGINE_COOLDOWN_TIME = 5
-
 # The number of pages worth of search results to consider from each search
 # attempt.
 SEARCH_PAGES = 1
+NO_TIPS_PLACEHOLDER = "No tips submitted for this location yet"
+
+PREFERRED_SEARCH_TEMPLATE = "site:gov {} County {} covid vaccine access"
+ALTERNATE_SEARCH_TEMPLATE = "{} County {} covid vaccine access"
 
 search_engines = [
     Ask,
@@ -79,26 +82,19 @@ def main():
                     break
 
             engine.set_headers({'User-Agent': get_random_user_agent()})
-            # internally intepreted as sleep(random_uniform(*self._delay))
-            # This value set low (or zero) since we pause between use of each
-            # engine (above).
-            engine._delay = (0, 0)
-
-            subject = "site:gov {} County {} covid vaccine access".format(
-                county, state)
+            subject = PREFERRED_SEARCH_TEMPLATE.format(county, state)
             search_results = engine.search(subject, pages=SEARCH_PAGES).links()
 
             if len(search_results) == 0:
-                subject = "{} County {} covid vaccine access".format(
+                subject = ALTERNATE_SEARCH_TEMPLATE.format(
                     county, state)
                 search_results = engine.search(
                     subject, pages=SEARCH_PAGES).links()
 
             engine_times[engine_name] = datetime.now()
 
-            title = "{} Search for '{}':".format(engine_name, subject)
-            access_time = "Retrieved on {}".format(
-                datetime.utcnow().strftime("%A, %B %-d, %Y at %-I:%M%p (UTC)"))
+            title = fmt_title(engine_name, subject)
+            access_time = fmt_access_time()
 
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:
@@ -107,15 +103,32 @@ def main():
             if len(search_results) == 0 or search_results[0] in markdown:
                 continue
 
-            if len(markdown.strip()) == 0 or "no tips submitted for this location yet" in markdown.lower():
-                markdown = "## Covid tips for {}, {}\n\n{}\n{}\n{}".format(
-                    county, state, title, search_results[0], access_time)
-            else:
-                markdown = "{}\n\n{}\n{}\n{}".format(
-                    markdown, title, search_results[0], access_time)
+            uri = search_results[0]
+
+            if len(markdown.strip()) == 0 or NO_TIPS_PLACEHOLDER in markdown.lower():
+                markdown = fmt_page_heading(county, state)
+
+            markdown = markdown + fmt_entry(title, uri, access_time)
 
             with open(state + "/" + county + ".md", "w") as county_file:
                 county_file.write(markdown)
+
+
+def fmt_title(engine_name, subject):
+    return "{} Search for '{}':".format(engine_name, subject)
+
+
+def fmt_access_time():
+    return "Retrieved on {}".format(
+        datetime.utcnow().strftime("%A, %B %-d, %Y at %-I:%M%p (UTC)"))
+
+
+def fmt_page_heading(county, state):
+    return "## Covid tips for {}, {}".format(county, state)
+
+
+def fmt_entry(title, uri, access_time):
+    return "\n\n{}\n{}\n{}".format(title, uri, access_time)
 
 
 def prush(*args):

@@ -39,6 +39,7 @@ def main():
                 break
 
             county, state = row[0], row[1]
+            prush("{}, {}...".format(county, state))
 
             engine_times = dict()
             time_since_last_use = 0
@@ -82,10 +83,11 @@ def main():
                 continue
 
             if "No tips submitted for this location yet" in markdown:
-                markdown = ""
-
-            markdown = "{}\n\n{}\n{}\n{}".format(
-                markdown, subject, search_results[0], datetime.now())
+                markdown = "Covid tips for {}, {}\n\n{}\n{}\n{}".format(
+                    county, state, subject, search_results[0], datetime.now())
+            else:
+                markdown = "{}\n\n{}\n{}\n{}".format(
+                    markdown, subject, search_results[0], datetime.now())
 
             with open(state + "/" + county + ".md", "w") as county_file:
                 county_file.write(markdown)

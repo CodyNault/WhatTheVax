@@ -77,7 +77,7 @@ def main():
 
             title = "{} Search for '{}':".format(engine_name, subject)
             access_time = "Accessed {}".format(
-                datetime.utcnow().strftime("%m/%d/%Y, %H:%M:%S"))
+                datetime.utcnow().strftime("%A, %B %-d, %Y at %-I:%M%p (UTC)"))
 
             markdown = ""
             with open(state + "/" + county + ".md", "r") as county_file:

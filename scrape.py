@@ -157,7 +157,6 @@ def get_prioritized_county_list():
     with open('county_list.csv', newline='', encoding='iso8859_15') as f:
         r = csv.reader(f, delimiter=',')
         for row in r:
-            print(row)
             county, state = row[0], row[1]
             file_name = state + "/" + county + ".md"
             try:
